@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="tranparent.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#article1">Article 1</a></li>
+                <li><a href="#article2">Article 2</a></li>
+                <li><a href="#article3">Article 3</a></li>
+                <li><a href="#article4">Article 4</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome to My Website</h1>
+    </header>
+    <button class="sidebar-toggle" onclick="toggleSidebar()">☰ Open Sidebar</button>
+    <aside class="sidebar">
+        <button onclick="scrollToSection('article1')">Article 1</button>
+        <button onclick="scrollToSection('article2')">Article 2</button>
+        <button onclick="scrollToSection('article3')">Article 3</button>
+        <button onclick="scrollToSection('article4')">Article 4</button>
+    </aside>
+    <aside class="side-navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#article1">Article 1</a></li>
+            <li><a href="#article2">Article 2</a></li>
+            <li><a href="#article3">Article 3</a></li>
+            <li><a href="#article4">Article 4</a></li>
+        </ul>
+    </aside>
+    <main>
+        <div class="slider">
+            <div class="slide fade">
+                <img src="/image/20230201_133606.webp" alt="Image 1">
+            </div>
+            <div class="slide fade">
+                <img src="/image/a.jpg" alt="Image 2">
+            </div>
+            <div class="slide fade">
+                <img src="/image/smkn.jpg" alt="Image 3">
+            </div>
+        </div>
+        <section id="article1">
+            <h2>Article 1</h2>
+            <p>This is the content of the first article.</p>
+        </section>
+        <section id="article2">
+            <h2>Article 2</h2>
+            <p>This is the content of the second article.</p>
+        </section>
+        <section id="article3">
+            <h2>Article 3</h2>
+            <p>This is the content of the third article.</p>
+        </section>
+        <section id="article4">
+            <h2>Article 4</h2>
+            <p>This is the content of the fourth article.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+    <script src="tranparent.js"></script>
+</body>
+</html>
